@@ -106,7 +106,7 @@ export default async (req, res) => {
         const datadafault = await fs.readFile(defaultPath);
         res.setHeader('Content-Type', 'text/html');
         // Escribiendo la respuesta
-        res.write();
+        res.write(datadafault);
         console.log(`📣 Respondiendo: 404 ${req.url} ${req.method}`);
         // Estableciendo codigo de respuesta
         res.statusCode = 404;
