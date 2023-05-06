@@ -2,14 +2,15 @@
   "name": "enlace-pet",
   "version": "1.0.0",
   "description": "Enrutador de peticiones",
-  "type":"module",
+  "type": "module",
   "engines": {
     "node": "19.x",
     "npm": "9.x"
   },
   "main": "index.js",
   "scripts": {
-    "start": "node ./"
+    "start": "node ./",
+    "dev": "nodemon ./"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
     "http"
   ],
   "author": "Gustavo Resendiz",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
